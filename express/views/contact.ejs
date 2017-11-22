@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <% include partial/nav.ejs %>
+        <strong><h1>This is Contact page</h1></strong>
+
+        <p>Query String</p><br>
+        <p><strong>Name :- </strong>
+            <p>
+                <%=qs.name%>
+            </p>
+
+        </p>
+        <form id="contactForm" method="post" action="/contact">
+            Name : <input type="text" name="name" /><br> City : <input type="text" name="city" />
+            <input type="submit" value="submit" />
+        </form>
+</body>
+
+</html>
